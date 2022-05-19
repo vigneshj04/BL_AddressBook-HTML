@@ -1,0 +1,27 @@
+html, input{
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 2em;
+}
+.error-name{
+    color: red;
+}
+
+.error-email{
+    color: red;
+}
+input{
+    flex: auto;
+}
+#cCode{
+    width: 30px;
+}
+
+#error{
+    color: red;
+}

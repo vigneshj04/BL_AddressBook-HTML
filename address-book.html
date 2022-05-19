@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title></title>
+    <style>
+		/* .name-error{
+			color: red;
+		} */
+
+
+	</style>
+
+    <link rel="stylesheet" href="address-book.css">
+</head>
+<body>
+<form>
+    <header class = "headerContainer">
+        <h1>Address book Page</h1>
+    </header>
+    <div>
+        <label for="fName">First Name</label><br>
+        <input type="text" id="fName" name="fName">
+        <error-output id="error" class="error-fName" for="fName"> </error-output>
+    </div>
+
+    <div>
+        <label for="lName">Last Name</label><br>
+        <input type="text" id="lName" name="lName">
+        <error-output id="error" class="error-lName" for="lName"> </error-output>
+    </div>
+
+    <div>
+        <label for="addr">Address</label><br>
+        <input type="text" id="addr" name="addr">
+        <error-output id="error" class="error-addr" for="addr"> </error-output>
+    </div>
+
+    <div>
+        <label for="cty">City</label><br>
+        <input type="text" id="cty" name="cty">
+        <error-output id="error" class="error-cty" for="cty"> </error-output>
+    </div>
+    <div>
+        <label for="state">State</label><br>
+        <input type="text" id="state" name="state">
+        <error-output id="error" class="error-state" for="state"> </error-output>
+    </div>
+
+    <div>
+        <label for="pn">Pin</label><br>
+        <input type="text" id="pn" name="pn">
+        <error-output id="error" class="error-pn" for="pn"> </error-output>
+    </div>
+    <div>
+        <label for="phn">Phone Number</label><br>
+        <input type="text" id="phn" name="phn">
+        <error-output id="error" class="error-phn" for="phn"> </error-output>
+    </div>
+
+    <div>
+        <label for="mail">Email Id</label><br>
+        <input type="email" id="mail" name="mail">
+        <error-output id="error" class="error-mail" for="mail"> </error-output>
+    </div>
+    <div>
+        <button type="submit" onclick="addContact()">Save Contact</button>
+    </div>
+
+    <div>
+        <button type="submit" onclick="displayContact()">Display Contact</button>
+        <p id="display"></p>
+    </div>
+
+
+</form>
+<script src="address-book.js"></script>
+</body>
+</html>
